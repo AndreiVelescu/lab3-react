@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f7fa;
+}
+
+.content {
+  text-align: center;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 80px;
+  font-weight: bold;
+  color: #f44336;
+}
+
+.message {
+  font-size: 24px;
+  color: #555;
+  margin: 20px 0;
+}
+
+.homeLink {
+  font-size: 18px;
+  color: #4caf4f;
+  text-decoration: none;
+}
+
+.homeLink:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 60px;
+  }
+
+  .message {
+    font-size: 20px;
+  }
+
+  .homeLink {
+    font-size: 16px;
+  }
+}

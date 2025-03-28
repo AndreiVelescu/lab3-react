@@ -1,0 +1,67 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.countNumber {
+  color: var(--Neutral-D_Grey, #4d4d4d);
+  width: 191px;
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+}
+.countName {
+  color: var(--Neutral-Grey, #717171);
+
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    gap: 12px;
+  }
+
+  .countNumber {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .countName {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+
+  .details {
+    align-items: center;
+  }
+
+  .countNumber {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .countName {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}

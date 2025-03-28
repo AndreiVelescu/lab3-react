@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+.container {
+  display: flex;
+  padding: 96px 144px;
+  align-items: center;
+  gap: 104px;
+  align-self: stretch;
+  background: var(--Neutral-Silver, #f5f7fa);
+  align-self: stretch;
+  position: relative;
+}
+
+.heroText1 {
+  color: #4d4d4d;
+  font-size: 64px;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 76px;
+  word-wrap: break-word;
+}
+
+.heroText2 {
+  color: #4caf4f;
+  font-size: 64px;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 76px;
+  word-wrap: break-word;
+}
+.heroText3 {
+  color: #717171;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+  padding-top: 16px;
+}
+.textContainer {
+  display: grid;
+  grid-template-columns: max-content;
+}
+
+.btn {
+  display: flex;
+  padding: 14px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: var(--Brand-Primary, #4caf4f);
+  margin-top: 32px;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.imageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 20px;
+  gap: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 64px 48px;
+    gap: 60px;
+    width: 100%;
+  }
+
+  .heroText1,
+  .heroText2 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .heroText3 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .textContainer {
+    max-width: 80%;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .imageContainer {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 48px 24px;
+    gap: 40px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .heroText1,
+  .heroText2 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .heroText3 {
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 12px;
+  }
+
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .imageContainer {
+    justify-content: center;
+  }
+
+  .dots {
+    bottom: 10px;
+  }
+}

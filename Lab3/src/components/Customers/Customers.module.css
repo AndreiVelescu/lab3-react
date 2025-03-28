@@ -1,0 +1,144 @@
+.container {
+  display: flex;
+  padding: 32px 144px;
+  align-items: center;
+  gap: 78px;
+  background: var(--Neutral-Silver, #f5f7fa);
+}
+.description {
+  color: var(--Neutral-Grey, #717171);
+
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.name {
+  color: var(--Brand-Primary, #4caf4f);
+  padding: 16px 0px;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+}
+.nameDescription {
+  color: var(--Neutral-L_Grey, #89939e);
+
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  padding: 32px 0px;
+  gap: 41px;
+}
+.btnContainer {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  gap: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.btnContainer:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+.logosAndButton {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  align-self: stretch;
+}
+
+.btn {
+  color: #4caf4f;
+  font-size: 20px;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 28px;
+  word-wrap: break-word;
+}
+@media (max-width: 1024px) {
+  .container {
+    padding: 24px 72px;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 100%;
+  }
+
+  .description,
+  .nameDescription {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .name {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .logos {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .logosAndButton {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .description,
+  .nameDescription {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .name {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .btn {
+    font-size: 16px;
+  }
+
+  .logos {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .imgContainer {
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .image {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+  }
+}
